@@ -37,7 +37,7 @@ Cast a "yes" vote
 ```
 var yesVoteData = myContract.castVote.getData( true );
 
-web3.eth.sendTransaction({to:contract, from:web3.eth.accounts[0], data: yesVoteData}, (err, ok) => console.log(err, ok) )
+web3.eth.sendTransaction({to:address, from:web3.eth.accounts[0], data: yesVoteData}, (err, ok) => console.log(err, ok) )
 ```
 
 **OR** Cast a "no" vote
@@ -45,7 +45,7 @@ web3.eth.sendTransaction({to:contract, from:web3.eth.accounts[0], data: yesVoteD
 ```
 var noVoteData = myContract.castVote.getData( false );
 
-web3.eth.sendTransaction({to:contract, from:web3.eth.accounts[0], data: yesVoteData}, (err, ok) => console.log(err, ok) )
+web3.eth.sendTransaction({to:address, from:web3.eth.accounts[0], data: yesVoteData}, (err, ok) => console.log(err, ok) )
 ```
 
 Show me how many yes votes there have been
